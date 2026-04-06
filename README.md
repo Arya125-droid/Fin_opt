@@ -1,4 +1,4 @@
-# 📈 The HW-Frontier
+# The HW-Frontier
 
 **The HW-Frontier** is a full-stack quantitative finance application. It leverages **Modern Portfolio Theory (MPT)** and **Convex Optimization** to solve for the efficient frontier, helping users allocate capital across volatile assets based on historical risk-adjusted returns.
 
@@ -36,7 +36,7 @@ $$\Sigma_{stable} = \Sigma + \epsilon I$$
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend (Client)
 * **React (Vite + TypeScript):** For a type-safe, high-performance user interface.
@@ -52,7 +52,7 @@ $$\Sigma_{stable} = \Sigma + \epsilon I$$
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
