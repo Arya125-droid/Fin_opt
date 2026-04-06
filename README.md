@@ -56,5 +56,5 @@ $$\Sigma_{stable} = \Sigma + \epsilon I$$
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Arya125-droid/Fin_opt.git](https://github.com/Arya125-droid/Fin_opt.git)
+git clone https://github.com/Arya125-droid/Fin_opt.git
 cd Fin_opt
