@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-# 📁 Using LOCAL CSV DATA instead of API
+# Using LOCAL CSV DATA instead of API
 TICKERS = ["AAPL", "MSFT", "GOOGL", "AMZN"]
 
 
