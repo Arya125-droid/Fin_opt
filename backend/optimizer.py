@@ -28,7 +28,7 @@ def get_market_data():
         prices.append(series.reset_index(drop=True))
         valid_tickers.append(ticker)
 
-    # 🔥 fallback if data missing
+    # fallback if data missing
     if len(prices) < 2:
         return np.array([0.12, 0.10]), np.diag([0.2, 0.15]), ["AAPL", "MSFT"]
 
@@ -54,16 +54,16 @@ def optimize_portfolio(data):
 
     mean_returns, cov_matrix, tickers = get_market_data()
 
-    # 🔥 Extract risk (variance)
+    # Extract risk (variance)
     risk_levels = np.diag(cov_matrix)
     risk_levels = np.where(risk_levels == 0, 1e-6, risk_levels)
 
-    # 🔥 Normalize risk levels (0 → low risk, 1 → high risk)
+    # Normalize risk levels (0 → low risk, 1 → high risk)
     risk_norm = risk_levels / np.max(risk_levels)
 
-    # 🔥 Combine return + risk preference
-    # Low risk user → prefer low volatility
-    # High risk user → prefer high volatility
+    # Combine return + risk preference
+    # Low risk user => prefer low volatility
+    # High risk user => prefer high volatility
     weights = (1 - risk) * (1 - risk_norm) + risk * risk_norm
 
     # also consider returns

@@ -16,7 +16,7 @@ app.add_middleware(
 
 @app.get("/")
 def home():
-    return {"message": "Backend running 🚀"}
+    return {"message": "Backend running"}
 
 @app.post("/optimize")
 def optimize(data: InputData):
